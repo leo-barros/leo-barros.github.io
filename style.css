@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .et-hero-tabs,
+  .et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: black;
+    text-align: center;
+    padding: 0 2em;
+  }
+  /*
+  .et-hero-tabs h1,
+  .et-slide h1 {
+      color: white;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+  }
+  */
+  .et-hero-tabs h3,
+  .et-slide h3 {
+    font-family: 'Poppins', sans-serif;
+      color: white;
+    font-size: 1rem;
+    opacity: 1;
+  }
+  
+  .et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+  }
+  .et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+  }
+  
+  .et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+  }
+  .et-hero-tab:hover {
+    color: white;
+    background: rgba(102, 177, 241, 0.8);
+    transition: all 0.5s ease;
+  }
+  
+  .et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+  }
+  @keyframes slidein {
+    from {
+      left:-50px
+    }
+  
+    to {
+      left: 4%;
+    }
+  }
+  .project-title
+{
+  font-size: 1.5vw;
+  font-weight: 700;
+  color:white;
+}
+
+.sec-title
+{
+  font-family: 'Abel', sans-serif;
+  font-weight: 500;
+  color: rgb(14, 13, 13);
+  font-size: 100px;
+}
+.project-container{
+  overflow: scroll;
+}
+.project{
+  height: 100%;
+  border-radius: 15px;
+  
+  
+}
+ .qc{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/bg1.jpeg");
+  z-index: 0;
+  backdrop-filter: blur(100px);
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+.cs50f{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/cs50f.jpg");
+  z-index: 0;
+  backdrop-filter: blur(100px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.project-text{
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 1em;;
+
+}
+.project-button{
+  position: relative;
+  margin-left: 4%;
+    opacity: 1;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 0.8em;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+  border-width: 2px;
+  color:white;
+  width: fit-content;
+  padding:10px; 
+  
+}
+
+.s2{
+    background-color: rgb(240, 240, 240);
+
+}
+.name-title{
+    /*text-shadow: 0px 2px 7px #000000;*/
+    position: relative;
+    bottom: 30%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7em;
+    color: #ffffff;
+  }
+.text-black{
+    font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 2em;
+}
+.text-white{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+      color: rgb(238, 238, 238);
+      font-size: 2em;
+}
+.glass{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 500px;
+        margin: 0px auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+}
+.s1{
+    
+    background-color: #000000;
+}
+.tech-stack{
+  font-weight: 800;
+}
+
+
+.name-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  position: fixed;
+  top: 24%;
+  text-transform: uppercase;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10vw;
+  font-family: "Poppins", sans-serif;
+}
+/*collapsible*/
+#background-img {
+  width: 100%;
+  height: 100%;
+  background: url('https://tookapic.imgix.net/photos/2015/250/f/1/f1e2f2191955dfbcf9c1c091a5d1dfc4.jpg?w=770&q=90&s=406b5f8b6095101855bf87e8fabb35f2') no-repeat;
+  background-size:cover;
+  z-index: -1;
+  opacity: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#container { 
+  width: 85%;
+  padding: 40px;
+  margin: auto;
+  color: #fff;
+  overflow:auto;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.5em;
+  position: relative;
+  top:10px
+}
+
+.list {
+  width: 100%;
+  background: #241445;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 1em;
+  font-weight: lighter;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+ul {
+  transition: all ease 1s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+ul.open {
+  max-height: 600px;
+}
+
+ul li:first-child {
+  margin-top: 15px;
+}
+
+.list:not(:first-child) {
+  margin-top: 5px;
+}
+
+.list li {
+  padding: 10px;
+}
+
+.icon {
+  position: absolute;
+  width: 20px;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  background: #ff308e;
+  border-radius: 25px;
+}
+
+ul {
+  padding: 10px;
+  
+}
+.outreach{
+  letter-spacing: 0.05vw;
+  line-height: 1.7em;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: 2px solid teal;
+  padding: 20px;
+  width: 70%;
+  font-weight: 300;
+  font-size: 0.9em;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+.h2{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05vw;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.h1{
+  color: white;
+  font: 700 48px/1.2 "Poppins", sans-serif;
+	margin-bottom: 10px;
+}
+.intro{
+  position: relative;
+  bottom: 9%;
+  text-align: start;
+  font-weight: 200;
+  padding: 20px;
+  border: 2px;
+  line-height: 1.3em;
+  border-radius: 20px;
+}
+.hey{
+  font-size: 7em; 
+  font-weight: 800; 
+  position: absolute; 
+  top:4%; 
+  left: 4%;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+
+.word{
+  font-size: 2em; 
+  justify-content: center; 
+  align-content: center;
+  position: fixed;
+}
+.tech-stackm{
+  color:white;
+  line-height: 1.1em;
+  text-align: left;
+  position: absolute;
+  bottom: 14%;
+  border-radius: 20px;
+  border: 2px solid teal;
+  padding: 20px;
+  width: 70%;
+  font-weight: 300;
+  font-size: 2em;
+}
+/*end of collapsible*/
+/*Start of projects*/
+/*End of project*/
+ 
+  @media (max-width: 960px){
+    html{
+      width: 100%;
+    }
+    
+    .et-hero-tabs h1,
+    .et-slide h1 {
+        font-size: 3rem;
+      }
+      .et-hero-tabs h3,
+    .et-slide h3 {
+        font-size: 0.7rem;
+      }
+    
+      .et-hero-tab {
+        font-size: 0.5rem;
+       
+      }
+    .title{
+      font-size: 1em;
+    }
+    .mini-card{
+      height: 100%;
+      width: 100%;
+    }
+    #container { 
+      padding: 0;
+      width: 100%;
+      color: #fff;
+    }
+    
+    li{
+      width: 100%;
+    }
+    .text-white{
+        font-size: 1.3rem;
+    }
+    .hey{
+      position: absolute;
+      font-size: 5rem;
+
+    }
+    .tech-stackm{
+      font-size: 1.2rem;
+      width: 96%;
+      line-height: 1.2em;
+      letter-spacing: 1.5px;
+    }
+    .word{
+      font-size: 2em; 
+      justify-content: inherit; 
+      align-content: inherit;
+      position: inherit;
+    }
+    .intro{
+      padding: 3px;
+      font-size: 1.7rem;
+    }
+    .h1{
+      font-size: 1rem;
+    }
+    .name-title{
+      text-align: left;
+      font-size: 6rem;
+      padding: 40px;
+    }
+    .et-hero-tabs-container{
+      max-width: 100vw;
+      height: 8vh;
+    }
+    h3{
+      padding: 0px;
+      position: relative;
+      top:10%
+    }
+    .outreach{
+      width: 98%;
+    }
+    .title {
+      font-size: 1rem;
+    }
+    .project-title{
+      font-size: 1rem;
+    }
+  }
