@@ -403,10 +403,11 @@ ul {
   font-weight: 1200;
   justify-content: left;
   text-align: left;
-
+  position: relative;
+  top:1%
 }
 .social{
-  align-content: left;
+  float:left;
   top: 53%;
   flex-wrap: wrap-reverse;
 }
@@ -485,10 +486,6 @@ transition: .5s;
       flex-shrink: inherit;
       width: 100%;
     }
-    div{
-        white-space: normal;
-      
-    }
     .et-hero-tabs h1,
     .et-slide h1 {
         font-size: 3rem;
@@ -525,25 +522,23 @@ transition: .5s;
     }
     .hey{
       position: absolute;
-      font-size: 5rem;
+      font-size: 4rem;
 
     }
     .tech-stackm{
+      padding: 10px;
       font-size: 1.2rem;
-      width: 96%;
+      width:fit-content;
       line-height: 1.2em;
-      letter-spacing: 1.5px;
+      width: 90%;
     }
     .word{
       font-size: 2em; 
-      justify-content: inherit; 
-      align-content: inherit;
-      position: absolute;
-      bottom:2%;
+      
     }
     .intro{
-      padding: 3px;
-      font-size: 1.7rem;
+      padding: 10px;
+      font-size: 1.5rem;
     }
     .h1{
       font-size: 1rem;
