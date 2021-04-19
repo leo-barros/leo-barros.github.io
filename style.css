@@ -388,15 +388,107 @@ ul {
   font-weight: 300;
   font-size: 2em;
 }
-/*end of collapsible*/
-/*Start of projects*/
-/*End of project*/
+.s4{
+  background: #E4EBF5;
+
+}
+.contact-card{
+  border-radius: 20px;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 20%), -2px -2px 4px 0 rgb(255 255 255 / 97%);
+}
+.getintouch{
+  color: black;
+  font-weight: 1200;
+  justify-content: left;
+  text-align: left;
+
+}
+.social{
+  align-content: left;
+  top: 53%;
+  flex-wrap: wrap-reverse;
+}
+.social a{
+position: relative;
+width:60px;
+height:60px;
+display:block;
+text-align:center;
+border-radius: 50%;
+padding: 6px;
+box-sizing: border-box;
+text-decoration:none;
+box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+background: linear-gradient(0deg, #ddd, #fff);
+transition: .5s;
+}
+.social a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+.social a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+.social :nth-child(1) a:hover .fab {
+  color: #69036d;
+}
+
+.social :nth-child(2) a:hover .fab {
+  color: #016897;
+}
+
+.social :nth-child(3) a:hover .fab {
+  color:rgb(207, 56, 114)
+}
+/*Start of cards
+* {
+  box-sizing: border-box;
+}
+.mini-card-grid {
+  padding: 3rem;
+  display: flex;
+}
+.mini-card {
+  position: relative;
+  min-width: 300px;
+  min-height: 350px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  border-radius: 16px;
+  transition: .2s;
+}
+.mini-card:not(:first-child) {
+  margin-left: -130px;
+}
+.mini-card:hover {
+  transform: translate(0,-1rem);
+}
+.mini-card:hover ~ .mini-card {
+  transform: translateX(130px);
+}
+*/
  
   @media (max-width: 960px){
-    html{
+  
+    body{
+      flex-shrink: inherit;
       width: 100%;
     }
-    
+    div{
+        white-space: normal;
+      
+    }
     .et-hero-tabs h1,
     .et-slide h1 {
         font-size: 3rem;
@@ -422,7 +514,9 @@ ul {
       width: 100%;
       color: #fff;
     }
-    
+    .mini-card-grid{
+      overflow-x: scroll;
+    }
     li{
       width: 100%;
     }
@@ -444,7 +538,8 @@ ul {
       font-size: 2em; 
       justify-content: inherit; 
       align-content: inherit;
-      position: inherit;
+      position: absolute;
+      bottom:2%;
     }
     .intro{
       padding: 3px;
