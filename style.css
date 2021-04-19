@@ -399,19 +399,21 @@ ul {
   box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 20%), -2px -2px 4px 0 rgb(255 255 255 / 97%);
 }
 .getintouch{
+  font-size: 6vw;
   color: black;
   font-weight: 1200;
   justify-content: left;
   text-align: left;
-  position: relative;
-  top:1%
+  position: absolute;
+  top:6%
 }
 .social{
-  float:left;
-  top: 53%;
-  flex-wrap: wrap-reverse;
+  position: relative;
+  right: 10%;
+
 }
 .social a{
+
 position: relative;
 width:60px;
 height:60px;
@@ -441,7 +443,7 @@ transition: .5s;
   transition: .5s;
 }
 
-.social :nth-child(1) a:hover .fab {
+.social:nth-child(1) a:hover .fab {
   color: #69036d;
 }
 
@@ -451,6 +453,31 @@ transition: .5s;
 
 .social :nth-child(3) a:hover .fab {
   color:rgb(207, 56, 114)
+}
+.email{
+  font-size: 3vw;
+  width: auto;
+}
+.social-profiles{
+  font-size: 2vw;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 20%), -2px -2px 4px 0 rgb(255 255 255 / 97%);
+  width: 15vw;
+}
+.git{
+  position: relative;
+  left: 40%;
+  top:21%;
+
+}
+.lnkd{
+  position: relative;
+  left: 40%;
+  top:28%;
+  display:inline;
+  padding: 10px;
+  width: fit-content;
 }
 /*Start of cards
 * {
@@ -483,7 +510,7 @@ transition: .5s;
   @media (max-width: 960px){
   
     body{
-      flex-shrink: inherit;
+      
       width: 100%;
     }
     .et-hero-tabs h1,
@@ -496,7 +523,7 @@ transition: .5s;
       }
     
       .et-hero-tab {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
        
       }
     .title{
@@ -559,6 +586,7 @@ transition: .5s;
     }
     .outreach{
       width: 98%;
+      overflow-y:scroll ;
     }
     .title {
       font-size: 1rem;
@@ -566,4 +594,18 @@ transition: .5s;
     .project-title{
       font-size: 1rem;
     }
+    .getintouch{
+      font-size:12vw;
+    }
+    .lnkd{
+      
+    }
+    .git{
+      
+    }
+    .social-profiles{
+      font-size: 5vw;
+      width: 35vw;
+    }
+  
   }

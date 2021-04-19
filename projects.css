@@ -75,8 +75,6 @@
   @media (max-width: 1085px) {
     .popular-articles {
       width: 100%;
-      padding-bottom: 2rem;
-      margin-bottom: 6rem;
       -ms-scroll-snap-points-x: repeat(250px);
       scroll-snap-points-x: repeat(250px);
       -ms-scroll-snap-type: mandatory;
@@ -88,7 +86,8 @@
   }
   @media (max-width: 1085px) {
     .popular-articles {
-      padding-left: 0;
+      width: 100vw;
+      padding: 0px;
     }
   }
   .popular-header .edit-popular {
@@ -144,7 +143,7 @@
   
   @media (max-width: 1085px) {
     .mini-card {
-      width: 220px;
+      width: 420px;
     }
     .mini-card:not(:first-child) {
       margin-left: -30px;
@@ -160,7 +159,7 @@
   }
   @media (max-width: 735px) {
     .mini-card {
-      width: 190px;
+      width: 300px;
     }
     .mini-card:not(:first-child) {
       margin-left: -10px;
