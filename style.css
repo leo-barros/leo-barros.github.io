@@ -104,7 +104,8 @@ body {
     color: #000;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   .et-hero-tab:hover {
     color: white;
