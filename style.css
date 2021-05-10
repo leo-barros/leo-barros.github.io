@@ -611,11 +611,9 @@ transition: .5s;
     .getintouch{
       font-size:12vw;
     }
-    .lnkd{
-      
-    }
-    .git{
-      
+    .resume-button{
+      top:6%;
+      font-size: 1.6em;
     }
     .social-profiles{
       font-size: 5vw;
