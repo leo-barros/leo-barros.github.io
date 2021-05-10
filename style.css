@@ -233,7 +233,20 @@ body {
 .tech-stack{
   font-weight: 800;
 }
-
+.resume-button{
+    position: absolute;
+    top:9.5%;
+    right: 10%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 3em;
+    border-radius: 15px;
+    background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+    border-width: 2px;
+    color:white;
+    width: fit-content;
+    padding:10px; 
+}
 
 .name-title {
   font-family: 'Poppins', sans-serif;
