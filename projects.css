@@ -6,35 +6,10 @@
   .popular-articles{
     align-content: center;
     justify-content: center;
-    position: relative;
-    top:5%;
-    height: 80%;
-    width: 100%;
+    background: #E4EBF5;
+    border-radius: 20px;
 }
-  .header-card {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff8a00), to(#da1b60));
-    background-image: linear-gradient(to top, #ff8a00, #da1b60);
-    position: relative;
-    border-radius: 16px;
-    margin: 0 4rem 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 320px;
-    flex: 0 0 320px;
-  }
-  .header-card p {
-    margin: 0;
-    font-size: 0.8rem;
-  }
+ 
   
   @media (max-width: 1085px) {
     .header-card {
@@ -86,7 +61,6 @@
   }
   @media (max-width: 1085px) {
     .popular-articles {
-      width: 100vw;
       padding: 0px;
     }
   }
@@ -97,14 +71,12 @@
   }
   
   .mini-card-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   
   .mini-card {
     width: 300px;
-    min-height: 350px;
+    min-height: 400px;
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
@@ -144,6 +116,8 @@
   @media (max-width: 1085px) {
     .mini-card {
       width: 420px;
+      align-content: left;
+    justify-content: left;
     }
     .mini-card:not(:first-child) {
       margin-left: -30px;
@@ -158,19 +132,35 @@
     }
   }
   @media (max-width: 735px) {
+    .mini-card-grid {
+      width: 100vw;
+      margin: 0;
+      padding-left: 120vw;
+    }
     .mini-card {
-      width: 300px;
+        min-width: 70vw;
+        height: 80vh;
+        padding: auto;
+        margin: 3vh 3vh 3vh 3vh;
+        box-shadow: -1rem 0 3rem #000;
     }
-    .mini-card:not(:first-child) {
-      margin-left: -10px;
+    .popular-articles{
+      top:0;
+      height: auto;
+      border-radius: 0;
+      overflow-y:visible;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    box-sizing:border-box;
+    display: block;
+    -webkit-overflow-scrolling: touch;
     }
-    .mini-card:hover {
+    .popular-articles .mini-card {
+      scroll-snap-align:initial;
+    }
+    .mini-card:focus, .mini-card:hover,.mini-card::after {
       -webkit-transform: translate(0, -1rem);
       transform: translate(0, -1rem);
-    }
-    .mini-card:hover ~ .mini-card {
-      -webkit-transform: translateX(10px);
-      transform: translateX(10px);
     }
   }
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-prj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    <div class="back-button"><a style="text-align: left;" href="https://leo-barros.github.io/">BACK</a></div><br>
+    <div class="title">House Price Prediction</div><br><br>
+    <div class="main-pic"><img src="images/boston-houses.png" alt=""></div><br><br><br><br>
+    <div class="h-box" style="text-align: center;">
+        A Linear Regression model to predict house prices<br><br>
+        <div class="social-button">
+            <a href="https://github.com/leo-barros/house-prices" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View code on GitHub</div></a>
+       </div>
+    </div><br>
+        <div class="teal-para">
+            
+            This project was my first experience with building a machine learning model off a real world
+            dataset. I built a <b>Linear Regression</b> based model to predict the house price and to what extent each data point affects
+            the price of the house.
+            <br><br>
+           <div class="para-title">The Boston Housing Data Set</div><br>
+            The model was built based on the Boston Housing Dataset.
+            This dataset is a derived from information collected by the U.S. Census Service concerning housing in the area of Boston MA. The following were the data points that
+            describe the dataset columns:
+            <br><br>
+            <b>CRIM</b>- per capita crime rate by town<br>
+            <b>ZN</b>- proportion of residential land zoned for lots over 25,000 sq.ft.<br>
+            <b>INDUS</b>- proportion of non-retail business acres per town.<br>
+            <b>CHAS</b>- Charles River dummy variable (1 if tract bounds river; 0 otherwise)<br>
+            <b>NOX</b>- nitric oxides concentration (parts per 10 million)<br>
+            <b>RM</b>- average number of rooms per dwelling<br>
+            <b>AGE</b>- proportion of owner-occupied units built prior to 1940<br>
+            <b>DIS</b>- weighted distances to five Boston employment centres<br>
+            <b>RAD</b>- index of accessibility to radial highways<br>
+            <b>TAX</b>- full-value property-tax rate per $10,000<br>
+            <b>PTRATIO</b>- pupil-teacher ratio by town<br>
+            <b>B</b>- 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town<br>
+            <b>LSTAT</b>- % lower status of the population<br>
+            <b>MEDV</b>- Median value of owner-occupied homes in $1000's
+            <br><br>
+            This is a copy of UCI ML housing dataset<a href="https://archive.ics.uci.edu/ml/machine-learning-databases/housing/">(link)</a>
+         </div><br><br>
+         <div class="title">Insights</div><br><br>
+         <div class="insights">
+            <div class="insight-item">
+                <div class="subtitle">Predicted vs Actual</div><br><br>
+                <img src="images/regplot.png" class="graph" alt="Predicted vs Actual"><hr><br>
+                The above figure shows a comparison between the predicted data and the actual testing data. 
+                In the figure it is evident majority of the predicted values directly correlate with the actual 
+                test data values, indicating that the model was a good fit. All prices in $1000's.<br><br><br>
+            </div>
+            <div class="insight-item ">
+                <div class="subtitle">Residuals</div><br><br>
+                <img src="images/residuals.png" class="graph" alt="Residuals"><hr><br>
+                The figure above is a histogram of the residuals. 
+                Residuals are obtained by subtracting the testing data from the corresponding test data. 
+                For this particular model, the residuals appear to be normally distributed i.e the density 
+                of residuals is highest at zero. This indicates that the model is fairly accurate.
+            </div>
+            <div class="insight-item last">
+                <div class="subtitle">Coefficients</div><br><br>
+                <img src="images/coeff.PNG" class="graph" alt="Coefficients"><br>
+                The adjoining table provides the 'weightage' of each data point (x $1000 on the house rate). In other words, the amount of 
+                influence each factor has on the price of the house.<br><br>For instance, holding all other features fixed, a 1 unit increase in AGE is associated with a DECREASE of $11.152 on the overall price of the house.<br><br>Similarly, holding all other features fixed, a 1 unit increase in RM(avg. no. of rooms per dwelling) is associated with a INCREASE of $4517.502 on the overall price of the house.
+
+            </div>
+         </div><br><br>
+          <div class="title">Tech Stack</div><br><br>
+           <div class="techstack">
+               <div class="tech">Jupyter Notebook</div>
+               <div class="tech">scikit-learn</div>
+               <div class="tech">MatPlotlib</div>
+               <div class="tech">NumPy</div>
+               <div class="tech">Pandas</div>
+           </div><br>
+           <!-- <div class="code-links">
+            <div class="github-button"><i class="fab fa-github"></i> View code on GitHub</div>
+           </div> -->
+           <div class="social-button">
+                <a href="http://"><i class="fab fa-github"></i> View code on GitHub</div></a>
+           </div>
+           
+</body><br>
+</html>

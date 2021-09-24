@@ -13,7 +13,14 @@
       gtag('config', 'G-TZCJLKTMBP');
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="typing.js"></script>
+    <script src="scroll.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="projects.css">
@@ -21,33 +28,42 @@
 </head>
 <body>
     <section class="et-hero-tabs s0">
+
         <div class="name-title">Leo Barros</div>
         <br><br>
         <h3><div class="word"></div></h3>
-        <div class="et-hero-tabs-container">
-          <a class="et-hero-tab" href="#tab-summary">Overview</a>
-          <a class="et-hero-tab" href="#tab-projects">Projects</a>
-          <a class="et-hero-tab" href="#tab-ach">Achievements</a>
-          <a class="et-hero-tab" href="#tab-bd">Beyond Development</a>
-          <a class="et-hero-tab" href="#tab-contact">Contact</a>
+        <div class="et-hero-tabs-container bottom-nav">
+          <a class="et-hero-tab" href="#summary">Overview</a>
+          <a class="et-hero-tab" href="#projects">Projects</a>
+          <a class="et-hero-tab" href="#achievements">Achievements</a>
+          <a class="et-hero-tab" href="#beyond-dev">Beyond Development</a>
+          <a class="et-hero-tab" href="#contact">Contact</a>
           <span class="et-hero-tab-slider"></span>
         </div>
       </section>
       
       <!-- Main -->
       <main class="et-main">
-        <section class="et-slide s1" id="tab-summary">
-          <div class="hey text-white">Hey!</div>
-          <span><a href="https://drive.google.com/file/d/1uT3VMvU9pqtzR0Am8deNss71IKqfjar5/view?usp=sharing"><div class="resume-button">Résumé</div></a></span>
-          <div class=" text-white intro"> I am Leo, a freshman majoring in Computer Engineering, exploring the vast domain of Computer
-            Science. I am presently focused on Web Development and am an avid Full-stack developer.
-            <br>I am proficient in:<br>
-          </div>
-          <div class="tech-stackm"><span style="font-weight: 900;">Languages:</span> C, C++, Javascript, Python<br><span style="font-weight: 900;">Framework: </span> Flask<br><span style="font-weight: 900;">Markups:</span> HTML5, CSS<br><span style="font-weight: 900;">Database Management:</span> SQLite3, PostgreSQL<br></div>
-        
+        <section class="et-slide s1" id="summary">
+          <div class="intro">
+           <br><br>
+          <div class="hey text-white">Hey!</div><br>
+          
+          <div class="tech-stackm">
+             I'm Leo, a sophomore majoring in Computer Engineering, exploring the vast domain of Computer
+              Science. <br><br>
+              I love learning new technologies and am presently delving into the world of <div class="gradient-text">Machine Learning</div>.
+              I am deeply intrigued by the potential applications of machine learning in the 
+              domain of healthcare, especially genetics. I also have experience in developing <div class="gradient-text">full-stack web applications</div><br><br>My ultimate goal has always been to use my skills as an engineer to contribute to something that 
+              improves human life.
+              <br><br>I have experience working in:<br>
+            <span style="font-weight: 400;">Languages:</span> C, C++, Javascript, Python<br><span style="font-weight: 400;">Frameworks & Libraries: </span> Flask, NodeJS, NumPy, Pandas, Seaborn, Matplotlib, Bootstrap<br><span style="font-weight: 400;">Markups:</span> HTML5, CSS<br><span style="font-weight: 400;">Database Management:</span> SQLite3, PostgreSQL<br>
+        </div>
         </section>
-        <section class="et-slide s2" id="tab-projects">
+        <section class="et-slide s2" id="projects"><br><br><br>
+          <div class="hey">Projects</div><br><br>
           <div class="popular-articles">
+            
             <div class="mini-card-grid" style="align-content: center; justify-content: center;">
                <article class="mini-card module module-article article" id="mini-post-278746">
                  <div class="project qc">
@@ -61,15 +77,10 @@
                      </div>
                      <div class="project-text">
                       A platform for home-based chefs to showcase their business<br><br>
-                      <div class="tech-stack"><div style="font-weight: 800;">Tech stack:</div> HTML, CSS, Javascript, Python (Flask framework), Jinja2, Postgresql</div>
                       </div>
-                      <br><br><br><br><br><br>
-                      <a href="https://quarantinedchefs.herokuapp.com/">
+                      <br><br><br><br><br><br><br>
+                      <a href="qc.html"target="_blank" rel="noopener noreferrer">
                       <div class="project-button">View Project</div>
-                      </a>
-                      <br>
-                     <a href="https://github.com/leo-barros/Quarantined-Chefs/blob/main/README.md">
-                      <div class="project-button">ReadMe</div>
                       </a>
                   </header>
                   </div>
@@ -85,261 +96,155 @@
                        </h2>
                     </div>
                     <div class="project-text">
-                     A mock trading platform to buy and sell stocks listed on the New York Stock Exchange (NYSE) at real time prices <br><br>
-                     <div class="tech-stack">Tech stack: HTML, CSS, Javascript, Python (Flask framework), Jinja2, SQLite3, IEX API</div>
+                     A mock trading platform to buy and sell stocks listed on the New York Stock Exchange (NYSE) at real-time prices <br><br>
                      </div>
                      <br><br><br><br><br>
-                     <a href="https://github.com/leo-barros/CS50-Finance">
+                     <a href="CS50 Finance.html" target="_blank" rel="noopener noreferrer">
                      <div class="project-button">View Project</div>
                      </a>
                  </header>
                  </div>
               </article>
+              <article class="mini-card module module-article article" id="mini-post-278746">
+               
+                <div class="project housepr">
+                 <header class="mini-article-card-header">
+                    <div class="mini-article-card-title">
+                       <h2 class="">
+                          <div class="article-card-header read-article">
+                            <div class="project-title">House Price Prediction</div><br><br>
+                          </div>
+                       </h2>
+                    </div>
+                    <div class="project-text">
+                      An implementation of a Linear Regression Machine Learning Model to predict house prices from a real-world dataset.<br><br>
+                     </div>
+                     <br><br><br><br><br>
+                     <a href="housepricing.html" target="_blank" rel="noopener noreferrer">
+                     <div class="project-button">View Project</div>
+                     </a>
+                 </header>
+                 </div>
+              </article>
+              
               </div>
          </div>
-         
-          <!--
-            <div class="project-container">
-            <div class="project"><div class="project-title">Quarantined Chefs</div><br><br><br>
-            <div class="project-text">
-            A platform for home-based chefs to showcase their business<br><br>
-            <div class="tech-stack">Tech stack: HTML, CSS, Javascript, Python (Flask framework), Jinja2, Postgresql</div>
-            </div>
-            <br><br><br>
-            <a href="https://quarantinedchefs.herokuapp.com/">
-            <div class="project-button">View Project</div>
-            </a>
-            </div>
-          </div>
-          -->
-            
         </section>
-        <section class="et-slide s3" id="tab-ach">
-          <div id="background-img"></div>
-    <div id="container">
-      <div id="list-1" class="list">
-        <div class="icon"></div>
-        <div class="title">Courses completed</div><ul type="disc">
+        <section class="et-slide s3" id="achievements">
+          <br>
+          <div class="hey">ACHIEVEMENTS</div><br><br>
+          <div class="outreach">
+    <ul type="disc">
+      <div class="title">Courses taken</div><br>
           <li>CS50x 2020 by Harvard University</li>
-          <li>Masterclass by Neil deGrasse Tyson on 'Scientific thinking and communication' </li>
-          <li>Training Program on Internet of Things and Robotics organized by Bolt IoT (2016) </li>
-          <li>Workshop on ‘Android App and Game development for School Students’ by Inventrom Robotics (2015)</li>
-          <li>Workshop on Robotics for Young Engineers conducted by Inventrom Robotics (2013)</li>
-        </ul>
-      </div>
-      <br><br><br>
-      <div id="list-1" class="list">
-        <div class="icon"></div>
-        <div class="title">Don Bosco College Of Engineering</div><ul type="disc">
-          <li>Elected chairperson of First Year SEEDS Council</li>
-          <li>Project (Quarantined Chefs) selected as finalist for Idea Competition</li>
-        </ul>
-      </div>
-      <br><br><br>
-      <div id="list-1" class="list">
-        <div class="icon"></div>
-        <div class="title">Loyola Higher Secondary School</div><ul>
-         <li> First place in INSPIRUS 2019, a tech competition organized by Department of Computer Engineering,
-         Don Bosco College of Engineering, Goa</li>
-         <li>First place for an informative presentation on occassion of Van Mahotsav (Forest Festival) 2019</li>
+          - An introduction to the intellectual enterprises of computer science which started with 1s and 0s and gradually progressed to subjects like C, Python, and full-stack web development.<br>
+          -As part of the course, I had to submit 8 (head-scratching) problem sets and one final project. The average grade for all my submissions was ~90%.<br>
+            -The problem sets were rather unique coding assignments that were very applicative to real-world scenarios. <br>
+          -This was arguably one of the best learning experiences I've had.<br>
+          <br><li>Masterclass by Neil deGrasse Tyson on 'Scientific thinking and communication' </li>
+          - This course primarily covered the importance of validating claims and overcoming various biases.<br>
+          <br><li>Training Program on Internet of Things and Robotics organized by Bolt IoT (2016) </li>
+          - Worked to perform various tasks and interfacing with other appliances using the Bolt IoT Module.<br>
+          <br><li>Workshop on ‘Android App and Game Development for School Students’ by Inventrom Robotics (2015)</li>
+          - Worked with MIT App Inventor, a programming interface based on the popular block-based visual programming language, Scratch.<br>
+          - I built apps like text-to-speech, doodle draw, and an image manipulator.<br>
+          <br><li>Workshop on Robotics for Young Engineers conducted by Inventrom Robotics (2013)</li>
+          - During this hands-on course, I was able to build and experience robots for the very first time at the age of 12.<br>
+          - We built a light following robot, a line-following robot, a BlueTooth-controlled robot, and a few more.<br>
+        
+      <br><br>
+        <div class="title">Don Bosco College Of Engineering</div><br>
+        <br><li>Elected chairperson of First-Year SEEDS Council</li>
+        -Led a team of 6 members to organize 10 events in various domains for the entire first-year batch of ~150 students.<br>
+        <br><li>Project (Quarantined Chefs) selected as finalist for Idea Competition</li>
+        
+      <br><br>
+        <div class="title">Loyola Higher Secondary School</div><br>
+         <li> First place in INSPIRUS 2019, a tech competition organized by Don Bosco College of Engineering, Goa</li>
+         <li>First place for an informative presentation on occasion of Van Mahotsav (Forest Festival) 2019</li>
           <li>First place in the debate competition at Octavia 2018 , an all-Goa inter higher-secondary event</li>
           <li>Second place in the School Band competition at Octavia 2018 (drummer)</li>
             <li>First place at INSPIRIT 2018, a State level Junior Management Event</li>
-        </ul>
+       </ul><br>
+      <div class="text-white">For a more detailed pre-college résumé click <a href="https://drive.google.com/file/d/1jhX1eWK6g7_xDMEvj0a0IuNKgXtA-gV7/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a></div>
+
       </div>
-      <br><br><br>
-    <div class="text-white">For a more detailed pre-college résumé click <a href="https://drive.google.com/file/d/1jhX1eWK6g7_xDMEvj0a0IuNKgXtA-gV7/view?usp=sharing">here</a></div>
+      <br>
+
     </div>
+    <br><br>
         </section>
-        <section class="et-slide" id="tab-bd">
+        <section class="et-slide s4" id="beyond-dev">
           <!--
           <h1 class="h1" style="position:absolute; top: 1px;">INTERESTS</h1>
           <span class="text-white" style="position:relative; top: 2%; font-size: 2.5em; font-weight: 900; z-index: 2;"><marquee scrollamount="20" scrolldelay="1">Quantum physics &#8226; Quantum Computing &#8226; Applications of Machine Learning &#8226; Rocket Science &#8226; Space robotics </marquee></span>
           <br><br>
           -->
-          
-          <a href="dswl.html"><h1 class="h1"><div class="link">#DeveloperSundaysWithLeo</div></h1>
-            Click to know more
-          </a>
-          <br><br><br>
-          <h1 class="h1">SOCIAL OUTREACH</h1>
-          <div class="outreach">
-            <h2 class="h2">Petition to postpone Goa Common Entrance Test 2020 in view of COVID-19 (2020)</h2>
+          <div class="hey">Beyond development</div><br>
+          <div class="sub-box">
+            “A jack of all trades is a master of none, but oftentimes better than a master of one.”<br><br>
+            Yup, that's actually the complete saying. I certainly believe being decent at a variety of skills
+            allows you to combine them and achieve great things. 
+            I share a keen interest in a lot of subjects outside of coding.<br><br>
+            <div class="gradient-text">Space exploration</div> is one such domain that has always fascinated me from a very young age. 
+            The space race has paved the way for several other technologies that have directly impacted human life here on earth, and I hope 
+            to someday make my own contributions to this field as an engineer.
+            <br><br>
+            I am an avid <div class="gradient-text">photographer</div>, <div class="gradient-text">public speaker</div> and <div class="gradient-text">drummer</div>.
+            I also enjoy listening to <div class="gradient-text">podcasts</div>, particularly The Tim Ferris Show
+            . You probably have heard of Tim's book, The 4-hour work-week. 
+            In his podcast, he interviews personalities from all walks of life; from Jamie Foxx to 
+            Reed Hastings, the co-founder of Netflix. Each person has a unique and inspiring story.<br><br>
+            I am deeply intrigued by subjects such as <div class="gradient-text">philosophy</div>, <div class="gradient-text">economics</div>, <div class="gradient-text">astrophysics</div>, <div class="gradient-text">quantum physics</div>, 
+            <div class="gradient-text">rocket science</div>, <div class="gradient-text">psychology</div>, and <div class="gradient-text">evolution</div>
+              
+          </div><br>
+            <div class="outreach">
+
+            Here are a few initiatives that I took on on my own.<br><br>
+            <a href="https://leo-barros.github.io/dswl.html" target="_blank" rel="noopener noreferrer" style="color:white;"><h2 class="h2">DeveloperSundaysWithLeo  <a href="https://leo-barros.github.io/dswl.html" style="color:teal">(link)</a></h2></a>
+          -A coding-teaching initiative with emphasis on hands-on learning<br>
+          -In a span of 11 sessions went from learning the basics of Python to developing full-stack web applications<br><br>
+          <a href="https://leo-barros.github.io/dswl.html" target="_blank" rel="noopener noreferrer" style="color:white;"><h2 class="h2">LinkedIn Sesssion  <a href="https://leo-barros.github.io/dswl.html" style="color:teal">(link)</a></h2></a>
+          -Conducted a webinar on building a good LinkedIn profile.<br>
+          - Provided a few tips and tricks to connect with like-minded people and leverage opportunities.<br><br>
+         
+            <h2 class="h2">Petition to postpone Goa Common Entrance Test 2020 in view of COVID-19 (2020)  <a href="https://www.heraldgoa.in/Goa/Postpone-GCET-candidates-appeal-to-DTE/162288" target="_blank" rel="noopener noreferrer" style="color:teal">(link)</a></h2>
           - Started an online petition to the Education Department of Goa to postpone the examination in view
             of the COVID-19 pandemic which garnered over 650 signatures. Was also quoted in the Goan
-            newspaper, ‘oHeraldo’ dated 26 June 2020 for the same. <a href="https://www.heraldgoa.in/Goa/Postpone-GCET-candidates-appeal-to-DTE/162288" style="color:blueviolet">(link)</a>
-            <br><br><h2 class="h2">Helped local villagers to enroll on the online portal for the government health card</h2>
-            <br><h2 class="h2">Student Speaker on the occasion of Van Mahotsav (Hindi for Forest Festival)</h2>
+            newspaper, ‘oHeraldo’ dated 26 June 2020 for the same. 
+            <br><br><h2 class="h2">Student Speaker on the occasion of Van Mahotsav (Hindi for Forest Festival)</h2>
             -Provided practical solutions for waste reduction and water conservation (Loyola 2019)
              </pre></div>
+            </div>
         </section>
-        <section class="et-slide s4" id="tab-contact">
-          <div class="h1 getintouch">Get in touch...</div>
-          <!--
-          <div class="contact-card git">
-            <div class="text-black social-profiles"> 
-              GitHub
+        <section class="et-slide s5" id="contact">
+          <br><br>
+          <div class="hey">Get in touch!</div>
+          <div class="outreach social">
+            <div class="social-text">
+          My inbox is always open..feel free to reach out to reach out any point.<br>
+        </div>
+          
+            <h2 class="email"><br><a href = "mailto:leodbarros25@gmail.com">leodbarros25@gmail.com</a><br><br></h2>
+
+            <a href="https://drive.google.com/file/d/1uT3VMvU9pqtzR0Am8deNss71IKqfjar5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="social-button resume">Link to my Résumé</a>
+            <br><br>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/leodbarros/" target="_blank" rel="noopener noreferrer" class="social-button"><i class="fab fa-linkedin" style="color:#0077b5 ;" aria-hidden="true"></i>LinkedIn</a><br>
+              <a href="https://twitter.com/theleobarros" target="_blank" rel="noopener noreferrer" class="social-button"><i class="fab fa-twitter"  style="color:#1DA1F2 ;"aria-hidden="true"></i>Twitter</a>
+              <a href="https://github.com/leo-barros" target="_blank" rel="noopener noreferrer" class="social-button"><i class="fab fa-github" aria-hidden="true"></i>Github</a>
+            
+            
             </div>
-            </div>
-            -->
-          <div class="social">
-            <div class="git">
-              <div class="text-black social-profiles"> 
-               GitHub
-              </div>
-            </div>
-            <a href="https://github.com/leo-barros"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <div class="lnkd">
-              <div class="text-black social-profiles"> 
-               LinkedIn
-              </div>
-            </div>
-            <a href="https://www.linkedin.com/in/leodbarros/"><i class="fab fa-linkedin" aria-hidden="true"></i></a><br>
-            </div>
-         <br><br>
-        <div class="contact-card">
-         <div class="text-black email"> 
-          Email: leodbarros25@gmail.com
-         </div>
-         </div>
-        <footer style="align-items:center; position:absolute; bottom:2%;"><div class="text-black" style=" font-size: 1em;font-weight: 100;">&#169; Leo Barros 2021 <br> Built with ❤️ by <a href="https://www.linkedin.com/in/leodbarros/">Leo Barros</a></div> </footer>
+          </div>
+            
+         
+        
+         <footer style="text-align:center; width: 100%;"><div class="text-white" style=" font-size: 1em;font-weight: 100;">&#169; Leo Barros 2021 <br> Built by <a href="https://www.linkedin.com/in/leodbarros/">Leo Barros</a></div> </footer>
         </section>
        
       </main>
 
 </body>
-
-<script>
-  var words = ['Full-stack web developer','Tech enthusiast', 'Elocutionist', 'Photographer','Drummer'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 5,
-    speed = 100;
-var wordflick = function () {
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.word').text(part);
-  },speed);
-};
-
-$(document).ready(function () {
-  wordflick();
-});
-</script>
-<script>
-  $(document).ready(function(){
-  $('.list').click(function(){
-    $(this).find('ul').toggleClass('open');
-  });
-});
-</script>
-<script>
-    class StickyNavigation {
-
-constructor() {
-    this.currentId = null;
-    this.currentTab = null;
-    this.tabContainerHeight = 70;
-    let self = this;
-    $('.et-hero-tab').click(function() { 
-        self.onTabClick(event, $(this)); 
-    });
-    $(window).scroll(() => { this.onScroll(); });
-    $(window).resize(() => { this.onResize(); });
-}
-
-onTabClick(event, element) {
-    event.preventDefault();
-    let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-    $('html, body').animate({ scrollTop: scrollTop }, 600);
-}
-
-onScroll() {
-    this.checkTabContainerPosition();
-this.findCurrentTabSelector();
-}
-
-onResize() {
-    if(this.currentId) {
-        this.setSliderCss();
-    }
-}
-
-checkTabContainerPosition() {
-    let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
-    if($(window).scrollTop() > offset) {
-        $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
-    } 
-    else {
-        $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
-    }
-}
-
-findCurrentTabSelector(element) {
-    let newCurrentId;
-    let newCurrentTab;
-    let self = this;
-    $('.et-hero-tab').each(function() {
-        let id = $(this).attr('href');
-        let offsetTop = $(id).offset().top - self.tabContainerHeight;
-        let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
-        if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
-            newCurrentId = id;
-            newCurrentTab = $(this);
-        }
-    });
-    if(this.currentId != newCurrentId || this.currentId === null) {
-        this.currentId = newCurrentId;
-        this.currentTab = newCurrentTab;
-        this.setSliderCss();
-    }
-}
-
-setSliderCss() {
-    let width = 0;
-    let left = 0;
-    if(this.currentTab) {
-        width = this.currentTab.css('width');
-        left = this.currentTab.offset().left;
-    }
-    $('.et-hero-tab-slider').css('width', width);
-    $('.et-hero-tab-slider').css('left', left);
-}
-
-}
-
-new StickyNavigation();
-
-</script>
 </html>

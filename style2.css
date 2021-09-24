@@ -10,7 +10,7 @@ body{
     
 }
 .title{
-    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    background-image: linear-gradient(315deg, #0c0b0c 0%, #647dee 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
