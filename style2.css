@@ -1,6 +1,7 @@
 body{
     background-color: black;
     text-align: center;
+    align-items: center;
     overflow-x: hidden;
 }
 .h1{
@@ -9,8 +10,9 @@ body{
     color: white;
     
 }
-.title{
-    background-image: linear-gradient(315deg, #0c0b0c 0%, #647dee 74%);
+.title-dswl{
+    font-size: 5vw;
+    background-image: linear-gradient(315deg, #cb68e4 0%, #647dee 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -32,6 +34,9 @@ img{
     width: 60vw;
 }
 .intro{
+    width: 70%;
+    color:white ;
+    text-align: left;
     top:10%;
     font-size: 2vw;
 }
@@ -40,13 +45,16 @@ img{
     text-align: center;
 }
 @media (max-width: 960px){
+    .title-dswl{
+        font-size: 6vw;
+    }
     .intro{
         padding:15px;
         font-size: 3.4vw;
     }
     iframe{
         padding:10px;
-        width:85%;
-        height:10%;
+        width:95%;
+        height:15%;
     }
 }

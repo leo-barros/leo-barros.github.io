@@ -204,13 +204,20 @@ body {
   background-size: cover;
   background-blend-mode: darken;
 }
-
+.inspirus{
+  background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/inspirus.netlify.app_ (1).jpg");
+  z-index: 2;
+  backdrop-filter: blur(400px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
 .project-text{
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 100;
-  font-size: 1em;;
+  font-size: 1em;
+  line-height: 1.2em;
 
 }
 .project-button{
@@ -323,6 +330,12 @@ ul li{
   animation-duration: 2s;
   animation-name: slidein;
   text-align: left;
+}
+.outreach li{
+  font-weight: 400;
+}
+.loyola li{
+  font-weight: 200;
 }
 .h2{
   font-family: 'Poppins', sans-serif;
