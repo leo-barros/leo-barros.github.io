@@ -135,11 +135,12 @@
     .mini-card-grid {
       width: 100vw;
       margin: 0;
-      padding-left: 120vw;
+      align-content: unset;
+      justify-content: unset;
     }
     .mini-card {
         min-width: 70vw;
-        height: 80vh;
+        height: 60vh;
         padding: auto;
         margin: 3vh 3vh 3vh 3vh;
         box-shadow: -1rem 0 3rem #000;

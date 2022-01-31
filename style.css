@@ -211,6 +211,13 @@ body {
   background-size: cover;
   background-blend-mode: darken;
 }
+.lendingclub{
+  background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/lendingclub.png");
+  z-index: 2;
+  backdrop-filter: blur(400px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
 .project-text{
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -310,13 +317,12 @@ ul{
 ul li{
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.05vw;
   font-weight: 800;
   font-size: 1.2em;
 }
 
 .outreach{
-  letter-spacing: 0.05vw;
+
   line-height: 1.7em;
   border-radius: 20px;
   font-family: 'Poppins', sans-serif;
@@ -335,7 +341,7 @@ ul li{
   font-weight: 400;
 }
 .loyola li{
-  font-weight: 200;
+  font-weight: 100;
 }
 .h2{
   font-family: 'Poppins', sans-serif;
@@ -398,7 +404,6 @@ ul li{
   border-radius: 20px;
   font-family: 'Poppins', sans-serif;
   color: white;
-  background-color: rgb(0, 8, 43);
   padding: 20px;
   width: 70%;
   font-weight: 300;

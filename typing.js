@@ -1,4 +1,4 @@
-var words = ['Full-stack web developer','Tech enthusiast', 'Elocutionist', 'Photographer','Drummer'],
+var words = ['Full-stack web developer','Data Scientist','Tech enthusiast', 'Elocutionist', 'Photographer','Drummer'],
 part,
 i = 0,
 offset = 0,
