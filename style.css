@@ -218,6 +218,21 @@ body {
   background-size: cover;
   background-blend-mode: darken;
 }
+
+.svm{
+  background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/iris.jpg");
+  z-index: 2;
+  backdrop-filter: blur(400px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.kmeans{
+  background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/university.jpg");
+  z-index: 2;
+  backdrop-filter: blur(400px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
 .project-text{
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -478,7 +493,7 @@ background: linear-gradient(to right, #ca59ec, #36D1DC);
     }
     .et-hero-tabs h1,
     .et-slide h1 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
       .et-hero-tabs h3,
     .et-slide h3 {

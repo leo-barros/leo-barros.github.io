@@ -131,6 +131,12 @@
       transform: translateX(30px);
     }
   }
+  h1{
+    color: rgb(236, 236, 236);
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   @media (max-width: 735px) {
     .mini-card-grid {
       width: 100vw;
@@ -162,6 +168,9 @@
     .mini-card:focus, .mini-card:hover,.mini-card::after {
       -webkit-transform: translate(0, -1rem);
       transform: translate(0, -1rem);
+    }
+    h1{
+      font-size: 1rem;
     }
   }
 

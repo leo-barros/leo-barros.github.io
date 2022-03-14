@@ -18,9 +18,7 @@ body{
     
 }
 iframe{
-    border-radius: 15px;
-    height: 20vw;
-    width:80vw;
+    width:100%;
     background-color:black ;
     padding-bottom: 5%;
 }
@@ -52,9 +50,5 @@ img{
         padding:15px;
         font-size: 3.4vw;
     }
-    iframe{
-        padding:10px;
-        width:95%;
-        height:15%;
-    }
+
 }
