@@ -211,6 +211,13 @@ body {
   background-size: cover;
   background-blend-mode: darken;
 }
+.clothesline{
+  background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/clothesline.jpg");
+  z-index: 2;
+  backdrop-filter: blur(400px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
 .lendingclub{
   background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/lendingclub.png");
   z-index: 2;
