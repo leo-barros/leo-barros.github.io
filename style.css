@@ -255,7 +255,13 @@ body {
   background-size: cover;
   background-blend-mode: darken;
 }
-
+.ticketflix{
+  background: linear-gradient( rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.767) ), url("images/movietheatre.jpeg");
+  z-index: 2;
+  backdrop-filter: blur(400px);
+  background-size: cover;
+  background-blend-mode: darken;
+}
 .project-text{
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
