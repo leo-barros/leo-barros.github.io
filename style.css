@@ -498,9 +498,14 @@ background: linear-gradient(to right, #ca59ec, #36D1DC);
   font-weight: 500;
   color: rgb(255, 255, 255);
   background-color: #00182e;
-  font-size: 3vw;
+  font-size: 2rem;
   border-radius: 20px;
   margin: 2vw 2vw;
+  padding: 1rem 2rem;
+}
+.social-button i
+{
+  margin-right: 0.6rem;
 }
 .social-links a{
   text-decoration: none;
@@ -627,16 +632,29 @@ background: linear-gradient(to right, #ca59ec, #36D1DC);
     }
     .social h2{
       font-size: 5vw;
-      font-weight: 600;
+      font-weight: 500;
+    }
+    .social-links
+    {
+      width: 100%;
+      flex-wrap: nowrap;
+
     }
     .social-text{
       font-size: 4vw;
       line-height: 1.1em;
       letter-spacing: 0.05em;
     }
+    .social-button i
+    {
+      margin-right: 0.2rem;
+      
+    }
     .social-button{
-      padding:6px;
-      font-size: 4vw;
+      padding: 0.2rem 0.5rem;
+      font-size: 1rem;
+      margin: 0.5rem 0.5rem;
+      border-radius: 0.5rem;
     }
     .resume{
       font-size: 5vw;
