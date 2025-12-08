@@ -250,32 +250,36 @@ function initAnimations() {
     // Trophy items animation
     const trophyItems = document.querySelectorAll('.trophy-item');
     if (trophyItems.length > 0) {
-        gsap.from('.trophy-item', {
-            scrollTrigger: {
-                trigger: '.trophy-grid',
-                start: 'top 85%'
-            },
-            y: 40,
-            opacity: 0,
-            duration: 0.6,
-            stagger: 0.1,
-            ease: 'power3.out'
+        gsap.set('.trophy-item', { autoAlpha: 0, y: 40 }); // Initial state
+        
+        ScrollTrigger.batch('.trophy-item', {
+            start: 'top 85%',
+            onEnter: batch => gsap.to(batch, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.6,
+                stagger: 0.1,
+                ease: 'power3.out',
+                overwrite: true
+            })
         });
     }
 
     // Learning cards animation
     const learningCards = document.querySelectorAll('.learning-card');
     if (learningCards.length > 0) {
-        gsap.from('.learning-card', {
-            scrollTrigger: {
-                trigger: '.learning-timeline',
-                start: 'top 85%'
-            },
-            y: 50,
-            opacity: 0,
-            duration: 0.7,
-            stagger: 0.12,
-            ease: 'power3.out'
+        gsap.set('.learning-card', { autoAlpha: 0, y: 50 }); // Initial state
+        
+        ScrollTrigger.batch('.learning-card', {
+            start: 'top 85%',
+            onEnter: batch => gsap.to(batch, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.7,
+                stagger: 0.12,
+                ease: 'power3.out',
+                overwrite: true
+            })
         });
     }
 
