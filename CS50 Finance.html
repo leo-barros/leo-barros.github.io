@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS50 Finance</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CS50 Finance | Leo Barros</title>
     <link rel="stylesheet" href="style-prj.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="back-button"><a style="text-align: left;" href="https://leo-barros.github.io/">BACK</a></div><br>
-    <main>
-    <div class="title">CS50 Finance</div><br><br>
-    <img src="images\cs50 finance mockup (1).png" alt=""><br><br><br><br>
-    <div class="proj-sub-title">A mock-trading platform to buy and sell stocks
-    </div><br><br>
-    <div class="teal-para">
-    As part of CS50's web track, I was tasked with building this mock trading platform.<br>
-    The user has to initially create an account, after which their account will be credited with
-    10000(imaginary) dollars. <br>Using this amount, the user can purchase a particular stock listed on
-    the New York Stock Exchange (NYSE), by entering the stock's symbol on the 'buy' page.<br>
-    The trade is executed at real time prices which are updated by querying IEX's API. <br>
-    The user can view their portfolio and even sell a particular stock from their holdings, at the current rate.
-</div>
-          <div class="title">Tech Stack</div><br><br>
-           <div class="techstack">
-               <div class="tech"><i class="fab fa-html5" style="color: orangered"></i> HTML5</div>
-               <div class="tech"><i class="fab fa-css3" style="color: rgb(73, 73, 255)"></i>CSS</div>
-               <div class="tech"><i class="fab fa-js-square" style="color: yellow"></i> JavaScript</div><hr>
-               <div class="tech"><i class="fab fa-python"></i> Python(Flask) </div>
-               <div class="tech">Jinja2</div>
-               <div class="tech">SQLite3</div>
-               
 
-           </div><br><br>
-           <div class="social-button">
-            <a href="https://github.com/leo-barros/CS50-Finance" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View code on GitHub</a>
-       </div><br><br>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Leo Barros</a>
+        <ul class="nav-links">
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="index.html#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="back-button"><a href="index.html">← Back to Portfolio</a></div>
+
+        <div class="title">CS50 Finance</div>
+        <img src="images/cs50 finance mockup (1).png" alt="CS50 Finance Platform">
+
+        <div class="proj-sub-title">A mock-trading platform to buy and sell stocks</div>
+
+        <div class="teal-para">
+            As part of CS50's web track, I was tasked with building this mock trading platform.<br><br>
+
+            The user has to initially create an account, after which their account will be credited with
+            10000 (imaginary) dollars.<br><br>
+
+            Using this amount, the user can purchase a particular stock listed on
+            the New York Stock Exchange (NYSE), by entering the stock's symbol on the 'buy' page.<br><br>
+
+            The trade is executed at real time prices which are updated by querying IEX's API.<br><br>
+
+            The user can view their portfolio and even sell a particular stock from their holdings, at the current rate.
+        </div>
+
+        <div class="title">Tech Stack</div>
+        <div class="techstack">
+            <div class="tech"><i class="fab fa-html5" style="color: #e34c26"></i> HTML5</div>
+            <div class="tech"><i class="fab fa-css3" style="color: #264de4"></i> CSS</div>
+            <div class="tech"><i class="fab fa-js-square" style="color: #f0db4f"></i> JavaScript</div>
+            <div class="tech"><i class="fab fa-python" style="color: #3776ab"></i> Python (Flask)</div>
+            <div class="tech">Jinja2</div>
+            <div class="tech">SQLite3</div>
+        </div>
+
+        <a href="https://github.com/leo-barros/CS50-Finance" target="_blank" rel="noopener noreferrer"
+            class="social-button">
+            <i class="fab fa-github"></i> View code on GitHub
+        </a>
     </main>
 </body>
+
 </html>

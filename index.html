@@ -3,495 +3,668 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leo Barros is a web developer, startup founder, machine learning and data scientist based in Goa, India. Founder of Quarantined Chefs. Latest projects and work experience showcased on this site.">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZCJLKTMBP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-TZCJLKTMBP');
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="typing.js"></script>
-    <script src="scroll.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="description"
+        content="Leo Barros - Software Engineer at OneShield | Computational Neuroscience Research | Full-Stack Development">
+    <meta name="keywords"
+        content="Leo Barros, Software Engineer, OneShield, Machine Learning, Web Development, Portfolio">
+    <meta name="author" content="Leo Barros">
+    <title>Leo Barros | Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <!-- Fonts - Elegant Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Sora:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projects.css">
-    <title>Leo Barros- Official Portfolio</title>
+    <!-- GSAP & Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
 </head>
 <body>
-    <section class="et-hero-tabs s0">
-
-        <div class="name-title">Leo Barros</div>
-        <br><br>
-        <h3><div class="word"></div></h3>
-        <div class="et-hero-tabs-container bottom-nav">
-          <a class="et-hero-tab" href="#summary">Overview</a>
-          <a class="et-hero-tab" href="#projects">Projects</a>
-          <a class="et-hero-tab" href="#achievements">Achievements</a>
-          <a class="et-hero-tab" href="#beyond-dev">Beyond Development</a>
-          <a class="et-hero-tab" href="#contact">Contact</a>
-          <span class="et-hero-tab-slider"></span>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">LEO</div>
+            <div class="loader-bar"></div>
         </div>
-      </section>
-      
-      <!-- Main -->
-      <main class="et-main">
-        <section class="et-slide s1" id="summary">
-          <div class="intro">
-           <br><br>
-          <div class="hey text-white">Hey!</div><br>
-          
-          <div class="tech-stackm">
-             I'm Leo, a Computer Engineering grad. <br><br>
-             I spent my final year of undergrad conducting research activities in the domain of <div class="gradient-text">Computational Neuroscience</div>.
-
-              I am deeply intrigued by the potential applications of intelligent systems in the 
-              domains of healthcare and finance. I've also dabbled a fair bit in the web space, developing <div class="gradient-text">full-stack web applications</div><br><br>My ultimate goal has always been to engineer something that 
-              improves human life.
-              <br><br>I have experience working in:<br>
-            <span style="font-weight: 400;">Languages:</span> C, C++, Javascript, Python<br>
-            <span style="font-weight: 400;"> Web Frameworks & Libraries: </span> NodeJS, ReactJS, Next.js, Flask, Bootstrap<br>
-            <span style="font-weight: 400;">Data visualization and analysis:</span> NumPy, Pandas, Seaborn, Matplotlib, Scikit-learn </span><br>
-            <span style="font-weight: 400;">Database Management:</span> SQLite3, PostgreSQL, MongoDB<br>
-        </div>
-        </section>
-     
-        <section class="et-slide s2" id="projects"><br><br><br>
-          <div class="hey">Projects</div><br><br>
-
-          <h1>Web Development projects</h1>
-            <div class="mini-card-grid">
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                 <div class="project qc">
-                  <header class="mini-article-card-header">
-                     <div class="mini-article-card-title">
-                        <h2 class="">
-                           <div class="article-card-header read-article">
-                             <div class="project-title">Quarantined Chefs</div><br><br>
-                           </div>
-                        </h2>
-                     </div>
-                     <div class="project-text">
-                      A platform for home-based chefs to showcase their business<br><br>
-                      </div>
-                      <br><br><br><br><br><br><br>
-                      <a href="qc.html"target="_blank" rel="noopener noreferrer">
-                      <div class="project-button">View Project</div>
-                      </a>
-                  </header>
-                  </div>
-               </article>
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                <div class="project cs50f">
-                 <header class="mini-article-card-header">
-                    <div class="mini-article-card-title">
-                       <h2 class="">
-                          <div class="article-card-header read-article">
-                            <div class="project-title">CS50 Finance</div><br><br>
-                          </div>
-                       </h2>
-                    </div>
-                    <div class="project-text">
-                     A mock trading platform to buy and sell stocks listed on the New York Stock Exchange (NYSE) at real-time prices <br><br>
-                     </div>
-                     <br><br><br><br><br>
-                     <a href="CS50 Finance.html" target="_blank" rel="noopener noreferrer">
-                     <div class="project-button">View Project</div>
-                     </a>
-                 </header>
-                 </div>
-              </article>
-             
-
-              <article class="mini-card module module-article article" id="mini-post-278746">
-               
-                <div class="project inspirus">
-                 <header class="mini-article-card-header">
-                    <div class="mini-article-card-title">
-                       <h2 class="">
-                          <div class="article-card-header read-article">
-                            <div class="project-title">Inspirus 2K21 Website</div><br><br>
-                          </div>
-                       </h2>
-                    </div>
-                    <div class="project-text">
-                        Event website built for Inspirus 2k21 organized by C-CODES, Don Bosco College of Engineering, a state-wide technical event.<br><br>
-                     </div>
-                     <br><br><br><br><br>
-                     <a href="https://inspirus.netlify.app/#" target="_blank" rel="noopener noreferrer">
-                     <div class="project-button">View Project</div>
-                     </a>
-                 </header>
-                 </div>
-              </article>
-              <article class="mini-card module module-article article" id="mini-post-278746">
-               
-                <div class="project clothesline">
-                 <header class="mini-article-card-header">
-                    <div class="mini-article-card-title">
-                       <h2 class="">
-                          <div class="article-card-header read-article">
-                            <div class="project-title">Clothesline</div><br><br>
-                          </div>
-                       </h2>
-                    </div>
-                    <div class="project-text">
-                        A design portfolio built for a prominent fashion designer.<br><br><br><br>
-                     </div>
-                     <br><br><br><br><br>
-                     <a href="https://clotheslinegoa.com" target="_blank" rel="noopener noreferrer">
-                     <div class="project-button">View Project</div>
-                     </a>
-                 </header>
-                 </div>
-              </article>
-              
-              <article class="mini-card module module-article article" id="mini-post-278746">
-                <div class="project aicte">
-                 <header class="mini-article-card-header">
-                    <div class="mini-article-card-title">
-                       <h2 class="">
-                          <div class="article-card-header read-article">
-                            <div class="project-title">Scholarship Portal</div><br><br>
-                          </div>
-                       </h2>
-                    </div>
-                    <div class="project-text">
-                        A scholarship portal built using NextJS and auth0 authentication.<br><br><br><br>
-                     </div>
-                     <br><br><br><br><br>
-                     <a href="https://madf.vercel.app" target="_blank" rel="noopener noreferrer">
-                     <div class="project-button">View Project</div>
-                     </a>
-                 </header>
-                 </div>
-              </article>
-              <article class="mini-card module module-article article" id="mini-post-278746">
-                <div class="project ticketflix">
-                 <header class="mini-article-card-header">
-                    <div class="mini-article-card-title">
-                       <h2 class="">
-                          <div class="article-card-header read-article">
-                            <div class="project-title">TicketFlix</div><br><br>
-                          </div>
-                       </h2>
-                    </div>
-                    <div class="project-text">
-                        A mobile-centric movie ticket booking system that incorportates OTP authentication and dynamically issues QR-coded e-tickets.<br><br><br><br>
-                     </div>
-                     <br><br>
-                     <a href="pdfs/TicketFlix.pdf" target="_blank" rel="noopener noreferrer">
-                     <div class="project-button">View Project</div>
-                     </a>
-                 </header>
-                 </div>
-              </article>
-   
-            </div>
-            <h1>Machine learning projects</h1>
-
-              <div class="mini-card-grid">
-
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                
-                 <div class="project housepr">
-                  <header class="mini-article-card-header">
-                     <div class="mini-article-card-title">
-                        <h2 class="">
-                           <div class="article-card-header read-article">
-                             <div class="project-title">House Price Prediction</div><br><br>
-                           </div>
-                        </h2>
-                     </div>
-                     <div class="project-text">
-                       An implementation of a Linear Regression Machine Learning Model to predict house prices from a real-world dataset.<br><br>
-                      </div>
-                      <br><br><br><br><br>
-                      <a href="housepricing.html" target="_blank" rel="noopener noreferrer">
-                      <div class="project-button">View Project</div>
-                      </a>
-                  </header>
-                  </div>
-               </article>
- 
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                
-                 <div class="project lendingclub">
-                  <header class="mini-article-card-header">
-                     <div class="mini-article-card-title">
-                        <h2 class="">
-                           <div class="article-card-header read-article">
-                             <div class="project-title">Loan repayement analysis</div><br><br>
-                           </div>
-                        </h2>
-                     </div>
-                     <div class="project-text">
-                       An implementation of a Random forests machine learning model to predict whether a borrower paid back a loan in full or not. Data from LendingClub.com<br><br>
-                      </div>
-                      <br>
-                      <a href="https://github.com/leo-barros/random-forests-decision-trees" target="_blank" rel="noopener noreferrer">
-                      <div class="project-button">View Project</div>
-                      </a>
-                  </header>
-                  </div>
-               </article>
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                
-                 <div class="project svm">
-                  <header class="mini-article-card-header">
-                     <div class="mini-article-card-title">
-                        <h2 class="">
-                           <div class="article-card-header read-article">
-                             <div class="project-title">Iris flower species prediction</div><br><br>
-                           </div>
-                        </h2>
-                     </div>
-                     <div class="project-text">
-                       An implementation of the support vector machine (SVM) classifier to predict the species of iris flowers.<br><br>
-                      </div>
-                      <br><br><br>
-                      <a href="https://github.com/leo-barros/support-vector-machines" target="_blank" rel="noopener noreferrer">
-                      <div class="project-button">View Project</div>
-                      </a>
-                  </header>
-                  </div>
-               </article><article class="mini-card module module-article article" id="mini-post-278746">
-                
-                 <div class="project kmeans">
-                  <header class="mini-article-card-header">
-                     <div class="mini-article-card-title">
-                        <h2 class="">
-                           <div class="article-card-header read-article">
-                             <div class="project-title">Categorizing unlabeled data using an un-supervised learning algorithm</div><br><br>
-                           </div>
-                        </h2>
-                     </div>
-                     <div class="project-text">
-                       An implementation of the k-means clustering algorithm to label and categorize universities as either public or private.<br><br>
-                      </div>
-                      <br>
-                      <a href="https://github.com/leo-barros/k-means-clustering" target="_blank" rel="noopener noreferrer">
-                      <div class="project-button">View Project</div>
-                      </a>
-                  </header>
-                  </div>
-               </article>
-               </div>
-
-
-               <h1>Research work</h1>
-
-              <div class="mini-card-grid">
-
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                
-                 <div class="project settheory">
-                  <header class="mini-article-card-header">
-                     <div class="mini-article-card-title">
-                        <h2 class="">
-                           <div class="article-card-header read-article">
-                             <div class="project-title">Set theoretic data structures</div><br><br>
-                           </div>
-                        </h2>
-                     </div>
-                     <div class="project-text">
-                       A review paper of the 'Description of a set-theoretic data structure' by David L. Childs<br><br>
-                      </div>
-                      <br><br><br><br><br>
-                      <a href="pdfs/Math review paper.pdf" target="_blank" rel="noopener noreferrer">
-                      <div class="project-button">View Paper</div>
-                      </a>
-                  </header>
-                  </div>
-               </article>
- 
-               
-               <article class="mini-card module module-article article" id="mini-post-278746">
-                
-                <div class="project internshiprep">
-                 <header class="mini-article-card-header">
-                    <div class="mini-article-card-title">
-                       <h2 class="">
-                          <div class="article-card-header read-article">
-                            <div class="project-title">Large scale brain modelling using TVB</div><br><br>
-                          </div>
-                       </h2>
-                    </div>
-                    <div class="project-text">
-                      An in-depth report detailing the work carried out as a Research Intern in the 
-                      field of computational neuroscience at BINN Lab, BITS-Goa<br><br>
-                     </div>
-                     <br><br><br>
-                     <a href="pdfs/Internship Report for website_compressed.pdf" target="_blank" rel="noopener noreferrer">
-                     <div class="project-button">View Paper</div>
-                     </a>
-                 </header>
-                 </div>
-              </article>
-
-              <article class="mini-card module module-article article" id="mini-post-278746">
-                
-               <div class="project projrep">
-                <header class="mini-article-card-header">
-                   <div class="mini-article-card-title">
-                      <h2 class="">
-                         <div class="article-card-header read-article">
-                           <div class="project-title">Computer Simulation of Neuropathology in Schizophrenia</div><br>
-                         </div>
-                      </h2>
-                   </div>
-                   <div class="project-text">
-                     Building a model incorporating region-level abberations charactersitc of a schizophrenic brain. Supervised by BINN Lab, BITS-Goa. 
-                     Carried out as the Final Year Project for B.E.<br><br>
-                    </div>
-                    <br>
-                    <a href="pdfs/Final Project Report_compressed.pdf" target="_blank" rel="noopener noreferrer">
-                    <div class="project-button">View Paper</div>
-                    </a>
-                </header>
-                </div>
-             </article>
-               </div>
-        
-        </section>
-        <section class="et-slide s3" id="achievements">
-          <br>
-          <div class="hey">ACHIEVEMENTS</div><br><br>
-          <div class="outreach">
-      <ul type="list">
-      <div class="title">Courses taken</div><br>
-      <li>Python for Data Science and Machine Learning by Jose Portilla</li>
-      <li>Web Developer Bootcamp by Colt Steele</li>
-          <li>CS50x 2020 by Harvard University</li>
-          - An introduction to the intellectual enterprises of computer science which started with 1s and 0s and gradually progressed to subjects like C, Python, and full-stack web development.<br>
-          -As part of the course, I had to submit 8 (head-scratching) problem sets and one final project. The average grade for all my submissions was ~90%.<br>
-            -The problem sets were rather unique coding assignments that were very applicative to real-world scenarios. <br>
-          -This was arguably one of the best learning experiences I've had.<br>
-          <br><li>Masterclass by Neil deGrasse Tyson on 'Scientific thinking and communication' </li>
-          - This course primarily covered the importance of validating claims and overcoming various biases.<br>
-          <br><li>Training Program on Internet of Things and Robotics organized by Bolt IoT (2016) </li>
-          - Worked to perform various tasks and interfacing with other appliances using the Bolt IoT Module.<br>
-          <br><li>Workshop on ‘Android App and Game Development for School Students’ by Inventrom Robotics (2015)</li>
-          - Worked with MIT App Inventor, a programming interface based on the popular block-based visual programming language, Scratch.<br>
-          - I built apps like text-to-speech, doodle draw, and an image manipulator.<br>
-          <br><li>Workshop on Robotics for Young Engineers conducted by Inventrom Robotics (2013)</li>
-          - During this hands-on course, I was able to build and experience robots for the very first time at the age of 12.<br>
-          - We built a light following robot, a line-following robot, a BlueTooth-controlled robot, and a few more.<br>
-        
-      <br><br>
-        <div class="title">Don Bosco College Of Engineering</div><br>
-        <br><li>🏆 Second place in 'DataHack' at Techyon 2k22 by PCCE</li>
-        -A nation-wide data-oriented hackathon.<br>
-        -Developed a solution to verify as much info as possible using the name of a person.<br>
-        <br><li>🏆 First place in 'Pitch Tank' at Techyon 2k22 by PCCE</li>
-        -A business idea pitching contest organized with competitors from across the state.<br>
-        <br><li>🏆 First place in State Level Business Plan Contest 2021-22</li>
-        -Devised a detailed business plan for my startup, detailing costing, challenges, and a sustainable business model.<br>
-        -Gave a video presentation on the same and answered a multiple rounds of questioning by the judges.<br>
-        <br><li>Executive Member of C-CODES Student Council</li>
-        -Coordinated and executed Inspirus 2k21, one of the largest technical events in the state.<br>
-        -Developed the entire event website to handle registrations and provide detailed information.<br>
-        <br><li>Elected chairperson of First-Year SEEDS Council</li>
-        -Led a team of 6 members to organize 10 events in various domains for the entire first-year batch of ~150 students.<br>
-        <br><li>Project (Quarantined Chefs) selected as finalist for Idea Competition</li>
-        
-      <br><br>
-      <div class="loyola">
-        <div class="title">Loyola Higher Secondary School</div><br>
-         <li>🏆 First place in INSPIRUS 2019, a tech competition organized by Don Bosco College of Engineering, Goa</li>
-         <li>🏆 First place for an informative presentation on occasion of Van Mahotsav (Forest Festival) 2019</li>
-          <li>🏆 First place in the debate competition at Octavia 2018 , an all-Goa inter higher-secondary event</li>
-          <li>🏆 Second place in the School Band competition at Octavia 2018 (drummer)</li>
-            <li>🏆 First place at INSPIRIT 2018, a State level Junior Management Event</li>
-          </div>
-       </ul><br>
-
-      <div class="text-white">For a more detailed pre-college résumé click <a href="https://drive.google.com/file/d/1jhX1eWK6g7_xDMEvj0a0IuNKgXtA-gV7/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a></div>
-
-      </div>
-      <br>
-
     </div>
-    <br><br>
-        </section>
-        <section class="et-slide s4" id="beyond-dev">
-          <!--
-          <h1 class="h1" style="position:absolute; top: 1px;">INTERESTS</h1>
-          <span class="text-white" style="position:relative; top: 2%; font-size: 2.5em; font-weight: 900; z-index: 2;"><marquee scrollamount="20" scrolldelay="1">Quantum physics &#8226; Quantum Computing &#8226; Applications of Machine Learning &#8226; Rocket Science &#8226; Space robotics </marquee></span>
-          <br><br>
-          -->
-          <div class="hey">Beyond development</div><br>
-          <div class="sub-box">
-            <!-- “A jack of all trades is a master of none, but oftentimes better than a master of one.”<br><br>
-            Yes, that's actually the complete saying. I certainly believe being decent at a variety of skills
-            allows you to combine them and achieve great things. 
-            That being said, I share a keen interest in a lot of subjects outside of coding.<br><br>
-            <div class="gradient-text">Space exploration</div> is one such domain that has always fascinated me from a very young age. 
-            The space race has paved the way for several other technologies that have directly impacted human life here on earth, and I hope 
-            to someday make my own contributions to this field as an engineer.
-            <br><br>
-            I am an avid <div class="gradient-text">photographer</div>, <div class="gradient-text">public speaker</div> and <div class="gradient-text">drummer</div>.
-            I also enjoy listening to <div class="gradient-text">podcasts</div>, particularly The Tim Ferris Show
-            . You probably have heard of Tim's book, The 4-hour work-week. 
-            In his podcast, he interviews personalities from all walks of life; from Jamie Foxx to 
-            Reed Hastings, the co-founder of Netflix. Each person has a unique and inspiring story.<br><br>
-            I am deeply intrigued by subjects such as <div class="gradient-text">philosophy</div>, <div class="gradient-text">economics</div>, <div class="gradient-text">astrophysics</div>, <div class="gradient-text">quantum physics</div>, 
-            <div class="gradient-text">rocket science</div>, <div class="gradient-text">psychology</div>, and <div class="gradient-text">evolution</div>
-               -->
-          </div><br>
-            <div class="outreach">
-
-            Here are a few initiatives that I took on on my own.<br><br>
-            <a href="https://leo-barros.github.io/dswl.html" target="_blank" rel="noopener noreferrer" style="color:white;"><h2 class="h2">DeveloperSundaysWithLeo  <a href="https://leo-barros.github.io/dswl.html" style="color:teal">(link)</a></h2></a>
-          -A coding-teaching initiative with emphasis on hands-on learning<br>
-          -In a span of 11 sessions went from learning the basics of Python to developing full-stack web applications<br><br>
-          <a href="https://www.linkedin.com/posts/leodbarros_attended-a-virtual-session-held-by-leo-barros-activity-6801159217622331393-15Xi" target="_blank" rel="noopener noreferrer" style="color:white;"><h2 class="h2">LinkedIn Sesssion  <a href="https://www.linkedin.com/posts/leodbarros_attended-a-virtual-session-held-by-leo-barros-activity-6801159217622331393-15Xi" style="color:teal">(link)</a></h2></a>
-          -Conducted a webinar on building a good LinkedIn profile.<br>
-          - Provided a few tips and tricks to connect with like-minded people and leverage opportunities.<br><br>
-         
-            <h2 class="h2">Petition to postpone Goa Common Entrance Test 2020 in view of COVID-19 (2020)  <a href="https://www.heraldgoa.in/Goa/Postpone-GCET-candidates-appeal-to-DTE/162288" target="_blank" rel="noopener noreferrer" style="color:teal">(link)</a></h2>
-          - Started an online petition to the Education Department of Goa to postpone the examination in view
-            of the COVID-19 pandemic which garnered over 650 signatures. Was also quoted in the Goan
-            newspaper, ‘oHeraldo’ dated 26 June 2020 for the same. 
-            <br><br><h2 class="h2">Student Speaker on the occasion of Van Mahotsav (Hindi for Forest Festival)</h2>
-            -Provided practical solutions for waste reduction and water conservation (Loyola 2019)
-             </pre></div>
-            </div>
-        </section>
-        <section class="et-slide s5" id="contact">
-          <br><br>
-          <div class="hey">Get in touch!</div>
-          <div class="outreach social">
-            <div class="social-text">
-          
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#hero" class="nav-logo">LB</a>
+        <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <!-- Full-screen Menu Overlay -->
+    <div class="nav-overlay" id="nav-overlay">
+        <div class="nav-overlay-content">
+            <ul class="nav-overlay-links">
+                <li><a href="#hero" data-nav><span class="nav-num">01</span>Home</a></li>
+                <li><a href="#about" data-nav><span class="nav-num">02</span>About</a></li>
+                <li><a href="#experience" data-nav><span class="nav-num">03</span>Experience</a></li>
+                <li><a href="#projects" data-nav><span class="nav-num">04</span>Projects</a></li>
+                <li><a href="#achievements" data-nav><span class="nav-num">05</span>Achievements</a></li>
+                <li><a href="#beyond-dev" data-nav><span class="nav-num">06</span>Beyond Dev</a></li>
+                <li><a href="#contact" data-nav><span class="nav-num">07</span>Contact</a></li>
+            </ul>
         </div>
-
-          
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/leodbarros/" target="_blank" rel="noopener noreferrer" class="social-button"><i class="fab fa-linkedin" style="color:#0077b5 ;" aria-hidden="true"></i>LinkedIn</a><br>
-              <a href="https://twitter.com/theleobarros" target="_blank" rel="noopener noreferrer" class="social-button"><i class="fab fa-twitter"  style="color:#1DA1F2 ;"aria-hidden="true"></i>Twitter</a>
-              <a href="https://github.com/leo-barros" target="_blank" rel="noopener noreferrer" class="social-button"><i class="fab fa-github" aria-hidden="true"></i>Github</a>
-            
-            
+    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Interactive Aurora Background -->
+        <div class="hero-aurora">
+            <div class="aurora-layer aurora-1"></div>
+            <div class="aurora-layer aurora-2"></div>
+            <div class="aurora-layer aurora-3"></div>
+        </div>
+        <!-- Floating geometric shapes -->
+        <div class="hero-shapes" id="heroShapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <!-- Grid overlay -->
+        <div class="hero-grid-overlay"></div>
+        <!-- Noise texture overlay -->
+        <div class="hero-noise"></div>
+        <!-- Main content -->
+        <div class="hero-main">
+            <!-- Current position badge -->
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Software Engineer @ OneShield</span>
             </div>
-          </div>
-            
-         
-        
-         <footer style="text-align:center; width: 100%;"><div class="text-white" style=" font-size: 1em;font-weight: 100;">&#169; Leo Barros 2024 </footer>
-        </section>
-       
-      </main>
-
+            <!-- Name with tagline -->
+            <h1 class="hero-name">
+                <span class="name-line">Leo Barros</span>
+            </h1>
+            <!-- Tagline -->
+            <p class="hero-tagline">
+                Building enterprise solutions at the intersection of <span class="accent-text">business</span> and <span
+                    class="accent-text">technology</span>
+            </p>
+            <!-- Action buttons -->
+            <div class="hero-actions">
+                <a href="#experience" class="hero-btn primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+                <a href="#contact" class="hero-btn secondary">Get In Touch</a>
+            </div>
+        </div>
+        <!-- Bottom info -->
+        <div class="hero-bottom">
+            <div class="hero-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Goa, India</span>
+            </div>
+            <div class="hero-scroll-hint">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+            <div class="hero-interests">
+                <span>ML</span>
+                <span class="dot">·</span>
+                <span>Neuroscience</span>
+                <span class="dot">·</span>
+                <span>Full-Stack</span>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About</h2>
+            </header>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text large">
+                        I'm Leo, a <span class="highlight">Software Engineer at OneShield</span>, based in Goa,
+                        India.
+                        I enjoy dabbling in the intersection of business and tech.
+                    </p>
+                    <p class="about-text">
+                        I share interests in <span class="highlight">applied ML</span> towards solving some of
+                        medicine's
+                        most pertinent problem statements. I spent over a year working in <span
+                            class="highlight">computational neuroscience</span>
+                        at the Brain-Inspired Neural Networks Lab, BITS-Goa.
+                    </p>
+                    <p class="about-text">
+                        I also launched a <span class="highlight">non-profit venture</span> called 'Quarantined
+                        Chefs'
+                        in 2021,
+                        an aggregator of home-based chefs that touched 1000+ users.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <!-- Premium Animated Venn Diagram -->
+                    <div class="venn-premium">
+                        <!-- Glow Effects -->
+                        <div class="glow glow-business"></div>
+                        <div class="glow glow-tech"></div>
+                        <!-- Business Circle -->
+                        <div class="venn-circle-premium business">
+                            <span class="venn-label">Business</span>
+                        </div>
+                        <!-- Tech Circle -->
+                        <div class="venn-circle-premium tech">
+                            <span class="venn-label">Tech</span>
+                        </div>
+                        <!-- Intersection Zone -->
+                        <div class="venn-intersection-premium">
+                            <div class="intersection-pulse"></div>
+                        </div>
+                        <!-- Floating Particles -->
+                        <span class="venn-particle" style="--delay: 0s; --x: 15%; --y: 30%;"></span>
+                        <span class="venn-particle" style="--delay: 0.5s; --x: 85%; --y: 35%;"></span>
+                        <span class="venn-particle" style="--delay: 1s; --x: 50%; --y: 80%;"></span>
+                        <span class="venn-particle" style="--delay: 1.5s; --x: 25%; --y: 70%;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Experience</h2>
+            </header>
+            <!-- Vertical Timeline -->
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <!-- OneShield -->
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <span class="timeline-logo">OS</span>
+                                <div>
+                                    <h3 class="timeline-company-name">OneShield</h3>
+                                    <span class="timeline-location">Goa, India</span>
+                                </div>
+                            </div>
+                            <span class="timeline-date">Jul 2024 — Present</span>
+                        </div>
+                        <h4 class="timeline-role">Associate Software Engineer</h4>
+                        <p class="timeline-description">
+                            Contributing to Product Engineering for the Enterprise platform (OSE).
+                            Engineering products
+                            to
+                            handle business processes leading up to policy creation for P&C insurers and
+                            MGAs.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>PL-SQL</span>
+                            <span>OneShield Frameworks</span>
+                            <span>Enterprise Software</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- BITS Research -->
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <span class="timeline-logo">BP</span>
+                                <div>
+                                    <h3 class="timeline-company-name">BITS Pilani</h3>
+                                    <span class="timeline-location">Goa Campus</span>
+                                </div>
+                            </div>
+                            <span class="timeline-date">2023 — 2024</span>
+                        </div>
+                        <h4 class="timeline-role">Research Intern</h4>
+                        <p class="timeline-description">
+                            Worked on Computer Simulation of neuropathology in Schizophrenia at the BINN
+                            Lab.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>Computational Neuroscience</span>
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quarantined Chefs -->
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <span class="timeline-logo">QC</span>
+                                <div>
+                                    <h3 class="timeline-company-name">Quarantined Chefs</h3>
+                                    <span class="timeline-location">Goa, India</span>
+                                </div>
+                            </div>
+                            <span class="timeline-date">2021 — 2024</span>
+                        </div>
+                        <h4 class="timeline-role">Founder</h4>
+                        <p class="timeline-description">
+                            Founded Goa's first home-chef aggregator. Migrated to Next.js/GCP for 40% faster
+                            loads.
+                            Connected 30+ chefs with 1000+ customers.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>Next.js</span>
+                            <span>Google Cloud</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Projects</h2>
+            </header>
+            <!-- Web Development Projects -->
+            <div class="project-category">
+                <h3 class="category-heading">
+                    <span class="highlight-text">Web Development</span> Projects
+                </h3>
+                <div class="elegant-grid">
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/QC Mockup.png')"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Quarantined Chefs</h4>
+                            <a href="qc.html" class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/cs50 finance mockup (1).png')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">CS50 Finance</h4>
+                            <a href="CS50 Finance.html" class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/inspirus.netlify.app_ (1).jpg')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Inspirus 2K21 Website</h4>
+                            <a href="https://inspirus.netlify.app/" target="_blank" rel="noopener"
+                                class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/clothesline.jpg')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Clothesline</h4>
+                            <a href="https://clotheslinegoa.com" target="_blank" rel="noopener" class="card-link">View
+                                Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/scholarships.webp')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Scholarship Portal</h4>
+                            <a href="https://madf.vercel.app" target="_blank" rel="noopener" class="card-link">View
+                                Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/movietheatre.jpeg')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">TicketFlix</h4>
+                            <a href="pdfs/TicketFlix.pdf" target="_blank" class="card-link">View Project
+                                →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Machine Learning Projects -->
+            <!-- <div class="project-category">
+                <h3 class="category-heading">
+                    <span class="highlight-text">Machine Learning</span> Projects
+                </h3>
+                <div class="elegant-grid">
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/housepr.jpg')"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">House Price Prediction</h4>
+                            <a href="housepricing.html" class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/lendingclub.png')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Loan Repayment Analysis</h4>
+                            <a href="https://github.com/leo-barros/random-forests-decision-trees" target="_blank"
+                                rel="noopener" class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/iris.jpg')"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Iris Flower Species Prediction</h4>
+                            <a href="https://github.com/leo-barros/support-vector-machines" target="_blank"
+                                rel="noopener" class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/boston-houses.png')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">K-Means Clustering</h4>
+                            <a href="https://github.com/leo-barros/k-means-clustering" target="_blank" rel="noopener"
+                                class="card-link">View Project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div> -->
+            <!-- Research Work -->
+            <div class="project-category">
+                <h3 class="category-heading">
+                    <span class="highlight-text">Research</span> Work
+                </h3>
+                <div class="elegant-grid">
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/set-theory.png')">
+                        </div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Set Theoretic Data Structures</h4>
+                            <a href="pdfs/Math%20review%20paper.pdf" target="_blank" class="card-link">View
+                                Paper →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/tvb.png')"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Large Scale Brain Modelling using TVB</h4>
+                            <a href="pdfs/Internship%20Report%20for%20website_compressed.pdf" target="_blank"
+                                class="card-link">View Paper →</a>
+                        </div>
+                    </article>
+                    <article class="elegant-card">
+                        <div class="card-image" style="background-image: url('images/schizo.png')"></div>
+                        <div class="card-overlay"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Computer Simulation of Neuropathology in Schizophrenia
+                            </h4>
+                            <a href="pdfs/Final%20Project%20Report_compressed.pdf" target="_blank"
+                                class="card-link">View Paper →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Marquee -->
+    <section class="skills-marquee-section">
+        <div class="skills-marquee">
+            <div class="skills-track">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">PL-SQL</span>
+                <span class="skill-item">Next.js</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">Google Cloud</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">Scikit-learn</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">PL-SQL</span>
+                <span class="skill-item">Next.js</span>
+            </div>
+        </div>
+    </section>
+    <!-- Achievements Section -->
+    <section class="achievements section" id="achievements">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Achievements</h2>
+            </header>
+            <!-- Competition Wins with Trophy Icons -->
+            <div class="trophy-grid">
+                <div class="trophy-item gold">
+                    <div class="trophy-icon">🏆</div>
+                    <div class="trophy-info">
+                        <span class="trophy-rank">1st Place</span>
+                        <h4>Pitch Tank - Techyon 2k22</h4>
+                        <p>Business idea pitching contest by PCCE</p>
+                    </div>
+                </div>
+                <div class="trophy-item silver">
+                    <div class="trophy-icon">🥈</div>
+                    <div class="trophy-info">
+                        <span class="trophy-rank">2nd Place</span>
+                        <h4>DataHack - Techyon 2k22</h4>
+                        <p>Nation-wide data-oriented hackathon by PCCE</p>
+                    </div>
+                </div>
+                <div class="trophy-item gold">
+                    <div class="trophy-icon">🏆</div>
+                    <div class="trophy-info">
+                        <span class="trophy-rank">1st Place</span>
+                        <h4>State Level Business Plan 2021-22</h4>
+                        <p>Business plan with sustainable model</p>
+                    </div>
+                </div>
+                <div class="trophy-item gold">
+                    <div class="trophy-icon">🏆</div>
+                    <div class="trophy-info">
+                        <span class="trophy-rank">1st Place</span>
+                        <h4>INSPIRUS 2019</h4>
+                        <p>Tech competition by Don Bosco College</p>
+                    </div>
+                </div>
+                <div class="trophy-item gold">
+                    <div class="trophy-icon">🏆</div>
+                    <div class="trophy-info">
+                        <span class="trophy-rank">1st Place</span>
+                        <h4>Debate - Octavia 2018</h4>
+                        <p>All-Goa inter higher-secondary event</p>
+                    </div>
+                </div>
+                <div class="trophy-item gold">
+                    <div class="trophy-icon">🏆</div>
+                    <div class="trophy-info">
+                        <span class="trophy-rank">1st Place</span>
+                        <h4>INSPIRIT 2018</h4>
+                        <p>State level Junior Management Event</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Learning Journey - Expanded Cards -->
+            <h3 class="subsection-title">Courses & Certifications</h3>
+            <div class="learning-timeline">
+                <div class="learning-card featured">
+                    <div class="learning-header">
+                        <span class="learning-year">2020</span>
+                        <span class="learning-provider">Harvard University</span>
+                    </div>
+                    <h4 class="learning-title">CS50x</h4>
+                    <p class="learning-desc">An introduction to computer science from 1s and 0s to C, Python, and
+                        full-stack web development. Submitted 8 problem sets and one final project with ~90% average
+                        grade.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-header">
+                        <span class="learning-year">2020</span>
+                        <span class="learning-provider">Jose Portilla</span>
+                    </div>
+                    <h4 class="learning-title">Python for Data Science and Machine Learning</h4>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-header">
+                        <span class="learning-year">2019</span>
+                        <span class="learning-provider">Colt Steele</span>
+                    </div>
+                    <h4 class="learning-title">Web Developer Bootcamp</h4>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-header">
+                        <span class="learning-year">2020</span>
+                        <span class="learning-provider">Neil deGrasse Tyson</span>
+                    </div>
+                    <h4 class="learning-title">Scientific Thinking and Communication</h4>
+                    <p class="learning-desc">Covered the importance of validating claims and overcoming biases.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-header">
+                        <span class="learning-year">2016</span>
+                        <span class="learning-provider">Bolt IoT</span>
+                    </div>
+                    <h4 class="learning-title">Internet of Things and Robotics</h4>
+                    <p class="learning-desc">Interfacing with appliances using the Bolt IoT Module.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-header">
+                        <span class="learning-year">2015</span>
+                        <span class="learning-provider">Inventrom Robotics</span>
+                    </div>
+                    <h4 class="learning-title">Android App Development</h4>
+                    <p class="learning-desc">Built apps using MIT App Inventor: text-to-speech, doodle draw, and
+                        image
+                        manipulator.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-header">
+                        <span class="learning-year">2013</span>
+                        <span class="learning-provider">Inventrom Robotics</span>
+                    </div>
+                    <h4 class="learning-title">Robotics for Young Engineers</h4>
+                    <p class="learning-desc">First robotics experience at age 12. Built light-following,
+                        line-following,
+                        and Bluetooth-controlled robots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Beyond Development Section -->
+    <section class="beyond section" id="beyond-dev">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Beyond Development</h2>
+            </header>
+            <div class="beyond-grid">
+                <div class="beyond-card">
+                    <div class="beyond-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="beyond-content">
+                        <h3 class="beyond-title">Developer Sundays With Leo</h3>
+                        <p class="beyond-desc">Weekly coding sessions and tutorials for aspiring developers.
+                        </p>
+                        <a href="dswl.html" class="beyond-link">View More →</a>
+                    </div>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="beyond-content">
+                        <h3 class="beyond-title">LinkedIn Session</h3>
+                        <p class="beyond-desc">Virtual session on career development and tech skills.</p>
+                        <a href="https://www.linkedin.com/posts/leodbarros_attended-a-virtual-session-held-by-leo-barros-activity-6801159217622331393-15Xi"
+                            target="_blank" rel="noopener" class="beyond-link">View Post →</a>
+                    </div>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon"><i class="fas fa-newspaper"></i></div>
+                    <div class="beyond-content">
+                        <h3 class="beyond-title">GCET Postponement Petition</h3>
+                        <p class="beyond-desc">Led petition to postpone Goa CET 2020 during COVID-19.</p>
+                        <a href="https://www.heraldgoa.in/Goa/Postpone-GCET-candidates-appeal-to-DTE/162288"
+                            target="_blank" rel="noopener" class="beyond-link">Read Article →</a>
+                    </div>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon"><i class="fas fa-tree"></i></div>
+                    <div class="beyond-content">
+                        <h3 class="beyond-title">Van Mahotsav Speaker</h3>
+                        <p class="beyond-desc">Student Speaker on the occasion of Van Mahotsav (Forest
+                            Festival).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <header class="section-header">
+                    <span class="section-num">07</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                </header>
+                <p class="contact-description">
+                    I'm always open to interesting conversations.
+                    Feel free to reach out!
+                </p>
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/leodbarros/" target="_blank" rel="noopener" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/theleobarros" target="_blank" rel="noopener" class="social-link"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/leo-barros" target="_blank" rel="noopener" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© Leo Barros 2024</p>
+                <p class="footer-text">Designed & Built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="animations.js"></script>
 </body>
 </html>
